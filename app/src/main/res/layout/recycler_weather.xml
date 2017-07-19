@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="#2fffffff">
+
+    <ImageView
+        android:id="@+id/weather_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weather_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toRightOf="@id/weather_pic"
+        app:layout_constraintTop_toTopOf="@id/weather_pic" />
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/weather_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/weather_pic"
+        app:layout_constraintLeft_toRightOf="@id/weather_pic" />
+
+</android.support.constraint.ConstraintLayout>
