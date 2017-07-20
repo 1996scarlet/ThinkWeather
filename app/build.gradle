@@ -42,5 +42,7 @@ dependencies {
 
     implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
 
+    implementation 'liji.library.dev:citypickerview:1.1.0'
+
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 }
