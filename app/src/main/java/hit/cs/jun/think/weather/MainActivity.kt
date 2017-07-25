@@ -42,6 +42,10 @@ class MainActivity(override val layoutId: Int = R.layout.activity_main) : BaseAc
             shareToAnyWhere()
         }
 
+        date_plan.setOnClickListener {
+            startActivity(Intent(this, CalendarActivity::class.java))
+        }
+
         now = (intent.getSerializableExtra("weatherData") as cloud).results[0]
 
         InitUI(now)

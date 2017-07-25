@@ -8,7 +8,7 @@ import retrofit2.http.Query
 interface CloudAPI {
 
     @GET("weather/now.json")
-    fun getCities(@Query("key") key: String = "mrggxxcf7b1fm3dh",
+    fun getCities(@Query("key") key: String = "2ciyyaw7qladbkae",
                   @Query("location") location: String = "哈尔滨"): Observable<cloud>
 
     //------------------------------------------------------------------------------//
